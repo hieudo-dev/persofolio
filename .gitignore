@@ -1,0 +1,30 @@
+.DS_Store
+node_modules
+/dist
+
+# other
+package-lock.json
+
+# local env files
+.env
+.env.local
+.env.*.local
+.env.*.local.*
+.history
+.capacitor.config.json
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
+jsconfig.json
+android
+ios
