@@ -14,6 +14,6 @@ const entry = await getEntryBySlug("post", slug);
 const { Content } = await entry.render();
 ---
 
-<BasePost>
+<BasePost post={entry}>
   <Content />
 </BasePost>

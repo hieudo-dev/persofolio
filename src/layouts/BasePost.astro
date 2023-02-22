@@ -1,51 +1,98 @@
 ---
+import { CollectionEntry } from "astro:content";
+import Footer from "../components/Footer.astro";
+
+interface Props {
+  post: CollectionEntry<"post">;
+}
+
+const { data } = Astro.props.post;
 ---
 
-<main class="pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-gray-900">
-  <div class="flex justify-between px-4 mx-auto max-w-screen-xl">
-    <article
-      class="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert"
-    >
-      <header class="mb-4 lg:mb-6 not-format">
-        <address class="flex items-center mb-6 not-italic">
-          <div
-            class="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white"
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>{data.title} — Hieu Do's blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;400&family=Raleway:wght@200;800&family=Source+Code+Pro:wght@300&display=swap"
+    />
+  </head>
+
+  <body class="dark">
+    <main class="pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-gray-900">
+      <div class="flex flex-col justify-between px-4 mx-auto max-w-screen-xl">
+        <article
+          class="font-extralight mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert"
+        >
+          <header>
+            <h1
+              class="text-gray-500 dark:text-white text-4xl text-center font-bold mb-0"
+            >
+              {data.title}
+            </h1>
+            <p
+              class="mt-2 text-center text-base font-light text-gray-500 dark:text-gray-400"
+            >
+              <time>
+                {
+                  data.date_published.toLocaleDateString("en-US", {
+                    year: "numeric",
+                    month: "long",
+                    day: "numeric",
+                  })
+                }
+              </time>
+              - 🕐 4 mins read
+            </p>
+          </header>
+          <section
+            class="mt-12 prose prose-stone dark:prose-invert text-gray-900 dark:text-gray-400"
           >
-            <img
-              class="mr-4 w-16 h-16 rounded-full"
-              src="https://avatars.githubusercontent.com/u/37623000?v=4"
-              alt="Hieu Do"
-            />
-            <div>
-              <a
-                href="#"
-                rel="author"
-                class="text-xl font-bold text-gray-900 dark:text-white"
-                >Hieu Do</a
+            <slot />
+          </section>
+
+          <footer class="my-12 not-format">
+            <address class="flex items-center mb-6 not-italic">
+              <div
+                class="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white"
               >
-              <p class="text-base font-light text-gray-500 dark:text-gray-400">
-                Software Engineer, Front End developer, OCG.
-              </p>
-              <p class="text-base font-light text-gray-500 dark:text-gray-400">
-                <time pubdate datetime="2022-02-08" title="February 8th, 2022"
-                  >Feb. 8, 2022</time
-                >
-              </p>
-            </div>
-          </div>
-        </address>
-      </header>
-      <section class="prose dark:prose-invert text-gray-400">
-        <slot />
-      </section>
-    </article>
-  </div>
-</main>
+                <img
+                  class="mr-4 w-16 h-16 rounded-full"
+                  src="https://avatars.githubusercontent.com/u/37623000?v=4"
+                  alt="Hieu Do"
+                />
+                <div>
+                  <a
+                    href="#"
+                    rel="author"
+                    class="text-xl font-bold text-gray-900 dark:text-white"
+                    >Hieu Do</a
+                  >
+                  <p
+                    class="text-base font-light text-gray-500 dark:text-gray-400"
+                  >
+                    Software Engineer, Front End developer, OCG.
+                  </p>
+                </div>
+              </div>
+            </address>
+          </footer>
+        </article>
+      </div>
+    </main>
 
-<style>
-  @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100&family=Raleway:wght@100;200;400;700;900&display=swap");
+    <Footer />
+  </body>
 
-  article {
-    font-family: "Outfit", sans-serif;
-  }
-</style>
+  <style>
+    article {
+      font-family: "Outfit", sans-serif;
+    }
+
+    header {
+      font-family: "Raleway", sans-serif;
+    }
+  </style>
+</html>
