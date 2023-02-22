@@ -1,53 +1,42 @@
 ---
 ---
 
-<main>
-  <h1>Coming soon</h1>
-  <h2>
-    My website is under construction. <br />
-    Hold tight! I'll be here soon with my awesome website.
-  </h2>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;700;900&display=swap"
+    />
+  </head>
 
-  <style>
-    @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;700;900&display=swap");
+  <body>
+    <main
+      class="bg-gray-900 text-white text-center flex flex-col justify-center items-center h-full min-h-screen"
+    >
+      <h1 class="font-extrabold text-8xl leading-normal mb-8">Coming soon</h1>
+      <h2 class="font-extralight text-xl text-gray-400">
+        My website is under construction. <br />
+        Hold tight! I'll be here soon with my awesome website.
+      </h2>
+    </main>
+  </body>
+</html>
 
-    body {
-      color: #fff;
-      background-color: #141313;
-      font-family: "Raleway", sans-serif;
-      font-weight: 400;
-    }
+<style>
+  body {
+    font-family: "Outfit", sans-serif;
+  }
 
-    main {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
-      min-height: 100vh;
-      text-align: center;
-    }
-
-    h1 {
-      margin-bottom: 8px;
-      font-size: 5em;
-      font-weight: 900;
-      background: #8df175;
-      background: linear-gradient(
-        to bottom left,
-        #8df175 0%,
-        #0a97f5 15%,
-        #d84ba8 75%,
-        #ff5968 100%
-      );
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    h2 {
-      color: #c4dde6;
-      font-size: 1.2em;
-      font-weight: 200;
-    }
-  </style>
-</main>
+  h1 {
+    background: #8df175;
+    background: linear-gradient(
+      to bottom left,
+      #8df175 0%,
+      #0a97f5 15%,
+      #d84ba8 75%,
+      #ff5968 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+</style>
