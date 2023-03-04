@@ -1,6 +1,8 @@
 ---
 title: Demo
 date_published: 2023-02-22
+tags: [demo]
+summary: This is a demo blog post
 ---
 
 ## Puer quoque

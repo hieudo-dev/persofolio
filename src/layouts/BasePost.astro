@@ -14,6 +14,7 @@ const { data } = Astro.props.post;
     <meta charset="utf-8" />
     <title>{data.title} — Hieu Do's blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={data.description} />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Outfit:wght@200;800&family=Source+Code+Pro:wght@300&display=swap"
