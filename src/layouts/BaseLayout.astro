@@ -1,0 +1,31 @@
+---
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+
+const { meta = {} } = Astro.props;
+const { title, description } = meta;
+---
+
+<html class="dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <style>
+      article {
+        font-family: "Inter", sans-serif;
+      }
+
+      header {
+        font-family: "Outfit", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body class="pt-20 bg-gray-700">
+    <Header />
+    <slot />
+    <Footer />
+  </body>
+</html>
