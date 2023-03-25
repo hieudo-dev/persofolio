@@ -1,8 +1,47 @@
 ---
+import heart from "../assets/icons/heart.svg";
+import twitter from "../assets/icons/twitter.svg";
+import github from "../assets/icons/github.svg";
+import linkedin from "../assets/icons/linkedin.svg";
 ---
 
-<footer class="py-4 text-center border-gray-500 border-t-2">
-  <p class="text-gray-400 text-base">Made with ❤️ by Hieu Do</p>
+<footer class="py-4 text-center border-gray-600 bg-gray-750 border-t-3">
+  <div
+    class="text-gray-400 text-base flex justify-between items-center px-4 container mx-auto"
+  >
+    <div class="flex items-center gap-4">
+      <a
+        href="https://github.com/hieudo-dev"
+        class="uppercase text-xs text-white"
+      >
+        <img src={github} width="20" height="20" />
+      </a>
+      <a
+        href="https://www.linkedin.com/in/hieudn7/"
+        class="uppercase text-xs text-white"
+      >
+        <img src={linkedin} width="20" height="20" />
+      </a>
+      <a
+        href="https://twitter.com/hieudodev"
+        class="uppercase text-xs text-white"
+      >
+        <img src={twitter} width="20" height="20" />
+      </a>
+    </div>
+
+    <p class="hidden md:flex">
+      Made with <img src={heart} class="inline-flex w-4 mx-2" /> by Hieu Do Ngoc
+    </p>
+
+    <a href="https://www.buymeacoffee.com/hieudodev" target="_blank">
+      <img
+        src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
+        alt="Buy Me A Coffee"
+        class="h-10"
+      />
+    </a>
+  </div>
 </footer>
 
 <style>
