@@ -12,19 +12,36 @@ const { title, description } = meta;
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
-    <style>
-      article {
-        font-family: "Inter", sans-serif;
-      }
-
-      header {
-        font-family: "Outfit", sans-serif;
-      }
-    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;800&family=Roboto:wght@100;200;400;800&family=Source+Code+Pro:wght@300&display=swap"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js"
+      data-name="bmc-button"
+      data-slug="hieudodev"
+      data-color="#FFDD00"
+      data-emoji=""
+      data-font="Cookie"
+      data-text="Buy me a coffee"
+      data-outline-color="#000000"
+      data-font-color="#000000"
+      data-coffee-color="#ffffff"
+    ></script>
   </head>
 
-  <body class="pt-20 bg-gray-700">
+  <body class="relative bg-gray-600">
     <Header />
+    <svg
+      viewBox="0 0 1440 116"
+      class="text-gray-750 border-gray-750 border-t-[54px]"
+      fill="currentColor"
+    >
+      <path
+        d="M0,80.4l40-21.1C80,37.7,160-3.9,240,1s160,58.5,240,74.1c80,16.2,160-5.6,240-10.7c80-4.9,160,4.9,240,21.1c80,15.6,160,37.4,240,26.5s160-52.6,200-74.1l40-21.1V0H0V80.4z"
+      ></path>
+    </svg>
     <slot />
     <Footer />
   </body>
