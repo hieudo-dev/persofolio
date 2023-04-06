@@ -1,8 +1,21 @@
 ---
-import Footer from "../components/Footer.astro";
-import Header from "../components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import Header from "@/components/Header.astro";
 
-const { showHeader = true, showFooter = true, meta = {} } = Astro.props;
+interface Props {
+  showHeader?: boolean;
+  showFooter?: boolean;
+  meta?: {
+    title: string;
+    description: string;
+  };
+}
+
+const {
+  showHeader = true,
+  showFooter = true,
+  meta = { title: "Hieu Do's Blog", description: "Hieu Do's Blog" },
+} = Astro.props;
 const { title, description } = meta;
 ---
 
@@ -31,17 +44,17 @@ const { title, description } = meta;
     ></script>
   </head>
 
-  <body class="relative bg-gray-600">
+  <body class="flex flex-col min-h-screen relative bg-gray-950">
     {
       showHeader ? (
         <>
           <Header />
           <svg
             viewBox="0 0 1440 116"
-            class="text-gray-750 border-gray-750 border-t-[54px]"
+            class="text-gray-900 border-text-gray-900 border-t-[32px]"
             fill="currentColor"
           >
-            <path d="M0,80.4l40-21.1C80,37.7,160-3.9,240,1s160,58.5,240,74.1c80,16.2,160-5.6,240-10.7c80-4.9,160,4.9,240,21.1c80,15.6,160,37.4,240,26.5s160-52.6,200-74.1l40-21.1V0H0V80.4z" />
+            <path d="M 0 80.4 l 40 -21.1 C 80 37.7 157 38 232 46 s 155 43 240 44 c 84 2 155 -18 243 -24 c 68 -2 160 4.9 240 21.1 c 80 15.6 160 37.4 240 26.5 s 160 -52.6 200 -74.1 l 40 -21.1 V 0 H 0 V 80.4 z" />
           </svg>
         </>
       ) : null

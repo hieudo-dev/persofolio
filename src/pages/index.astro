@@ -1,7 +1,18 @@
 ---
-import ComingSoon from "../components/ComingSoon.astro";
+import BaseLayout from "@/layouts/BaseLayout.astro";
 ---
 
 <html>
-  <ComingSoon page="home" />
+  <BaseLayout
+    showFooter={true}
+    showHeader={true}
+    meta={{
+      title: "Hieu Do",
+      description: "",
+    }}
+  >
+    <main class="flex-grow min-h-screen container mx-auto lg:pl-32 lg:pt-16">
+      <h1 class="text-5xl font-sans text-gray-100">Hi, I'm Hieu</h1>
+    </main>
+  </BaseLayout>
 </html>
