@@ -6,6 +6,7 @@ module.exports = {
       fontFamily: {
         sans: "Inter",
         serif: "Roboto",
+        mono: "Source Code Pro"
       },
       colors: {
         gray: {
@@ -19,7 +20,7 @@ module.exports = {
           '700': '#28455d',
           '800': '#24394b',
           '900': '#22323f',
-          '950': '#04070a',
+          '950': '#0b131c',
         },
       },
     },
