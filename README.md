@@ -1,3 +1,8 @@
-# hieudodev
+# Persofolio
+Personal website where I showcase my past works & projects. Also includes my blog. Built with Astro & TailwindCSS
 
-COMING SOON
+## Todo
+- [x] Home page
+- [x] Blog
+- [ ] Contact page
+- [ ] Past works & projects
