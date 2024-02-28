@@ -28,4 +28,4 @@ yarn-error.log*
 jsconfig.json
 android
 ios
-.astro/*
+.next
