@@ -7,6 +7,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      boxShadow: {
+        purple: "0 0 36px #c084fc6a",
+      },
+      borderRadius: {
+        "4xl": "32px",
+      },
       fontFamily: {
         nunito: ["var(--nunito-font)"],
         merriweather: ["var(--merriweather-font)"],
