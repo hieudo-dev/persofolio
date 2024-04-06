@@ -16,6 +16,7 @@
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@gsap/react": "^2.1.0",
     "locomotive-scroll": "^5.0.0-beta.11",
+    "logrocket": "^8.1.0",
     "next": "14.1.0",
     "react": "^18",
     "react-dom": "^18"

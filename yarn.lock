@@ -1786,6 +1786,11 @@ lodash.merge@^4.6.2:
   resolved "https://registry.yarnpkg.com/lodash.merge/-/lodash.merge-4.6.2.tgz#558aa53b43b661e1925a0afdfa36a9a1085fe57a"
   integrity sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==
 
+logrocket@^8.1.0:
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/logrocket/-/logrocket-8.1.0.tgz#2b804985b5370b359831ee03c92423e08ac48044"
+  integrity sha512-0PRv9lnS90KBrL3mfiQzcKEPvNT3N55pRN0PRe/q3DqWFQbIW1p72MmMp9a3Qi9la6o+TXri7r68ZE0AM7vsDA==
+
 loose-envify@^1.1.0, loose-envify@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/loose-envify/-/loose-envify-1.4.0.tgz#71ee51fa7be4caec1a63839f7e682d8132d30caf"
