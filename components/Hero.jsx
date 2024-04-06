@@ -1,4 +1,4 @@
-import Wave from "@/components/wave";
+import Wave from "@/components/Wave";
 
 export default function Hero() {
   return (
