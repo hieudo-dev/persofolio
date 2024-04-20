@@ -29,7 +29,7 @@ export default function About() {
   return (
     <section
       ref={about}
-      className="container mx-auto flex h-screen gap-32 bg-purple-50 py-20"
+      className="container mx-auto flex h-screen gap-32 bg-blue-50 py-20"
     >
       <div className="flex w-1/2 items-center justify-center">
         <div className="flex flex-col items-center">
@@ -66,7 +66,8 @@ export default function About() {
               className="relative z-10 aspect-square w-full object-cover"
             />
           </div>
-          <div className="h-full w-full after:absolute after:left-10 after:top-10 after:block after:h-full after:w-full after:bg-indigo-400 after:content-['']"></div>
+          <div className="h-full w-full after:absolute after:left-10 after:top-10 after:block after:h-full after:w-full after:bg-indigo-300 after:content-['']"></div>
+          <div className="h-full w-full after:absolute after:left-5 after:top-5 after:block after:h-full after:w-full after:bg-purple-400 after:content-['']"></div>
         </div>
       </div>
     </section>

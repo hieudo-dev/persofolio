@@ -9,16 +9,16 @@ import {
 
 export default function Contact() {
   return (
-    <section className="bg-purple-50 py-48">
-      <div className="container mx-auto flex gap-16 rounded-[56px] bg-gray-50 p-28 shadow-md">
-        <div className="relative mx-16 flex flex-1 flex-col">
-          <h2 className="relative z-10 mb-8 mt-12 font-merriweather text-[82px] font-black leading-none tracking-normal text-gray-500">
+    <section className="py-48">
+      <div className="container mx-auto flex rounded-[56px]">
+        <div className="relative mx-8 flex w-1/2 flex-col">
+          <h2 className="relative z-10 mb-8 mt-12 font-merriweather text-8xl font-black leading-none tracking-normal text-gray-500">
             Let's <br />
             <span className="text-blue-500">connect</span>
           </h2>
           <p className="mr-16 font-nunito text-2xl font-semibold text-gray-400">
-            Open to collaboration or just want to chat? Feel free to reach out
-            anytime.
+            Open to collaboration or just want to chat? <br />
+            Feel free to reach out anytime.
           </p>
           <div className="relative mb-8 flex flex-1 items-end gap-8 text-gray-400">
             <FontAwesomeIcon
@@ -48,8 +48,8 @@ export default function Contact() {
             />
           </div>
         </div>
-        <div className="relative flex-1">
-          <form className="relative z-10 ml-8 flex flex-col justify-start rounded-3xl bg-gray-50 p-8 shadow-2xl">
+        <div className="relative flex w-1/2 justify-center">
+          <form className="relative z-10 ml-8 flex w-full max-w-lg flex-col justify-start rounded-3xl bg-gray-50 p-8 shadow-2xl">
             <label
               htmlFor="name"
               className="mb-2 font-nunito text-lg font-semibold tracking-wider text-gray-500"
