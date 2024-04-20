@@ -9,9 +9,9 @@ function convertTZ(date, tzString) {
 export default function Footer() {
   const myTime = convertTZ(new Date(), "Asia/Jakarta");
   return (
-    <footer className="rounded-tl-4xl rounded-tr-4xl bg-gray-50 pb-10 pt-12 shadow-[0_0_20px_#00000012]">
+    <footer className="rounded-tl-4xl rounded-tr-4xl bg-gray-50 pb-4 pt-8 shadow-[0_0_20px_#00000012]">
       <div className="container mx-auto">
-        <div className="mb-12 flex justify-center">
+        <div className="mb-8 flex justify-center">
           <p className="inline bg-gradient-to-r from-blue-500 via-indigo-400 to-purple-500 bg-clip-text text-center font-mavenpro text-4xl font-semibold text-gray-800 text-transparent">
             Thanks for reading!
           </p>
