@@ -9,12 +9,12 @@ import {
 
 export default function Contact() {
   return (
-    <section className="bg-blue-50 py-32">
+    <section className="bg-purple-50 py-48">
       <div className="container mx-auto flex gap-16 rounded-[56px] bg-gray-50 p-28 shadow-md">
         <div className="relative mx-16 flex flex-1 flex-col">
           <h2 className="relative z-10 mb-8 mt-12 font-merriweather text-[82px] font-black leading-none tracking-normal text-gray-500">
             Let's <br />
-            <span className="text-purple-500">connect</span>
+            <span className="text-blue-500">connect</span>
           </h2>
           <p className="mr-16 font-nunito text-2xl font-semibold text-gray-400">
             Open to collaboration or just want to chat? Feel free to reach out
@@ -84,7 +84,7 @@ export default function Contact() {
               rows="3"
               className="mb-12 rounded-xl border-2 border-purple-200 bg-purple-50 p-2 text-xl text-gray-800"
             />
-            <button className="via rounded-3xl bg-gradient-to-l from-blue-500 to-purple-500 px-2 py-3 font-mavenpro text-xl font-semibold text-white">
+            <button className="via rounded-3xl bg-gradient-to-r from-blue-500 to-purple-500 px-2 py-3 font-mavenpro text-xl font-semibold text-white">
               Send message
             </button>
           </form>

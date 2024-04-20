@@ -16,9 +16,14 @@
   }
 }
 
-body {
-  /* color: rgb(var(--foreground-rgb)); */
-  @apply bg-blue-50;
+@layer base {
+  body {
+    @apply bg-purple-50;
+  }
+
+  html {
+    font-size: clamp(10px, 1vw, 16px);
+  }
 }
 
 @layer utilities {
