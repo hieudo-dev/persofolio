@@ -1,11 +1,13 @@
 import React, { useEffect } from "react";
-import { Nunito, Merriweather_Sans, Maven_Pro } from "next/font/google";
-import Hero from "@/components/Hero";
+
+import { Maven_Pro, Merriweather_Sans, Nunito } from "next/font/google";
+
 import About from "@/components/About";
-import Experience from "@/components/Experience";
-import Footer from "@/components/Footer";
 import Blog from "@/components/Blog";
 import Contact from "@/components/Contact";
+import Experience from "@/components/Experience";
+import Footer from "@/components/Footer";
+import Hero from "@/components/Hero";
 
 const nunito = Nunito({ subsets: ["latin"], variable: "--nunito-font" });
 const merriweather = Merriweather_Sans({
@@ -23,9 +25,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main
-      className={`${nunito.variable} ${merriweather.variable} ${mavenpro.variable}`}
-    >
+    <main className={`${nunito.variable} ${merriweather.variable} ${mavenpro.variable}`}>
       <Hero />
       <About />
       <Experience />

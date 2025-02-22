@@ -1,15 +1,12 @@
 import Image from "next/image";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Blog() {
   return (
     <section className="relative after:absolute after:inset-0 after:-z-10 after:bg-white after:bg-opacity-5 after:backdrop-blur-xl after:content-['']">
-      <Image
-        fill
-        className="absolute inset-0 -z-20 object-cover object-top"
-        src="/blog.jpg"
-      />
+      <Image fill className="absolute inset-0 -z-20 object-cover object-top" src="/blog.jpg" />
       <div className="container mx-auto flex flex-col items-center justify-center py-32">
         <p className="mb-6 rounded-full border border-purple-300 bg-white bg-opacity-10 px-3 py-1 font-nunito tracking-widest text-purple-200 shadow-md">
           BLOG

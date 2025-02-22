@@ -1,9 +1,12 @@
 import { useRef } from "react";
+
 import Image from "next/image";
-import Underline from "@/components/Underline";
-import gsap from "gsap";
+
 import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
+import Underline from "@/components/Underline";
 
 export default function About() {
   const image = useRef();
@@ -27,18 +30,15 @@ export default function About() {
   }, []);
 
   return (
-    <section
-      ref={about}
-      className="container mx-auto flex h-screen bg-blue-50 py-20"
-    >
-      <div className="flex w-1/2 items-center justify-center p-12">
+    <section ref={about} className="flex h-screen py-20 mx-auto  bg-blue-50">
+      <div className="flex items-center justify-center w-1/2 p-12">
         <div className="flex flex-col items-center">
-          <p className="mb-6 rounded-full border border-purple-400 bg-purple-100 px-3 py-1 font-nunito text-sm font-normal tracking-widest text-purple-500 shadow-lg">
+          <p className="px-3 py-1 mb-6 text-sm font-normal tracking-widest text-purple-500 bg-purple-100 border border-purple-400 rounded-full shadow-lg font-nunito">
             ABOUT
           </p>
-          <h2 className="mb-12 font-merriweather text-6xl font-bold text-gray-700">
+          <h2 className="mb-12 text-6xl font-bold text-gray-700 font-merriweather">
             My name is
-            <span className="relative ml-4 inline-flex">
+            <span className="relative inline-flex ml-4">
               Hieu
               <Underline
                 id="line"
@@ -46,15 +46,14 @@ export default function About() {
               />
             </span>
           </h2>
-          <p className="text-left font-nunito text-2xl font-normal leading-8 text-gray-500">
-            I'm a software engineer from Vietnam, driven by a strong passion for
-            learning and programming. My playground is web development, where I
-            specialize in bridging the gap between frontend development and
-            crafting exceptional user experiences.
+          <p className="text-2xl font-normal leading-8 text-left text-gray-500 font-nunito">
+            I'm a software engineer from Vietnam, driven by a strong passion for learning and
+            programming. My playground is web development, where I specialize in bridging the gap
+            between frontend development and crafting exceptional user experiences.
           </p>
         </div>
       </div>
-      <div className="flex w-1/2 flex-col items-center justify-center p-28">
+      <div className="flex flex-col items-center justify-center w-1/2 p-28">
         <div className="relative">
           <div className="overflow-hidden">
             <Image
@@ -63,7 +62,7 @@ export default function About() {
               alt="Hieu"
               width={800}
               height={800}
-              className="relative z-10 aspect-square rounded-lg object-cover"
+              className="relative z-10 object-cover rounded-lg aspect-square"
             />
           </div>
           <div className="h-full w-full after:absolute after:left-12 after:top-12 after:block after:h-full after:w-full after:rounded-lg after:bg-indigo-300 after:content-['']"></div>

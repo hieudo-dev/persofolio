@@ -1,4 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
   faGithub,
@@ -6,6 +5,7 @@ import {
   faTwitch,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Contact() {
   return (
@@ -21,31 +21,11 @@ export default function Contact() {
             Feel free to reach out anytime.
           </p>
           <div className="relative mb-8 flex flex-1 items-end gap-8 text-gray-400">
-            <FontAwesomeIcon
-              icon={faGithub}
-              size="3x"
-              className="text-gray-700"
-            />
-            <FontAwesomeIcon
-              icon={faFacebook}
-              size="3x"
-              className="text-blue-500"
-            />
-            <FontAwesomeIcon
-              icon={faLinkedin}
-              size="3x"
-              className="text-[#0077B5]"
-            />
-            <FontAwesomeIcon
-              icon={faTwitter}
-              size="3x"
-              className="text-[#08a0e9]"
-            />
-            <FontAwesomeIcon
-              icon={faTwitch}
-              size="3x"
-              className="text-purple-600"
-            />
+            <FontAwesomeIcon icon={faGithub} size="3x" className="text-gray-700" />
+            <FontAwesomeIcon icon={faFacebook} size="3x" className="text-blue-500" />
+            <FontAwesomeIcon icon={faLinkedin} size="3x" className="text-[#0077B5]" />
+            <FontAwesomeIcon icon={faTwitter} size="3x" className="text-[#08a0e9]" />
+            <FontAwesomeIcon icon={faTwitch} size="3x" className="text-purple-600" />
           </div>
         </div>
         <div className="relative flex w-1/2 justify-center">

@@ -7,6 +7,18 @@ module.exports = {
   ],
   theme: {
     extend: {
+      container: {
+        padding: {
+          DEFAULT: "1.6rem",
+          md: "3rem",
+          xl: "3rem",
+        },
+        center: true,
+        screens: {
+          md: "768px",
+          xl: "1220px",
+        },
+      },
       boxShadow: {
         purple: "0 0 36px #c084fc6a",
       },
@@ -48,8 +60,7 @@ module.exports = {
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },
   },
