@@ -16,6 +16,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.5.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@gsap/react": "^2.1.0",
+    "@vercel/analytics": "^1.5.0",
     "locomotive-scroll": "^5.0.0-beta.11",
     "logrocket": "^8.1.0",
     "next": "^14.2.21",
