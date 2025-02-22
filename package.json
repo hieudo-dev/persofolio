@@ -17,7 +17,7 @@
     "@gsap/react": "^2.1.0",
     "locomotive-scroll": "^5.0.0-beta.11",
     "logrocket": "^8.1.0",
-    "next": "14.1.0",
+    "next": "^14.2.21",
     "react": "^18",
     "react-dom": "^18"
   },
@@ -28,5 +28,8 @@
     "eslint-config-next": "14.1.0",
     "postcss": "^8",
     "tailwindcss": "^3.3.0"
+  },
+  "engines": {
+    "node": "18"
   }
 }
