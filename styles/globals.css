@@ -21,8 +21,16 @@
     @apply bg-blue-50;
   }
 
+  main {
+    @apply font-nunito;
+  }
+
   html {
     font-size: clamp(10px, 1vw, 16px);
+  }
+
+  b {
+    @apply font-bold text-gray-600;
   }
 }
 

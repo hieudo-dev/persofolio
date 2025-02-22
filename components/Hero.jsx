@@ -21,7 +21,7 @@ export default function Hero() {
   });
 
   return (
-    <section className="container text-shadow relative flex h-screen min-h-screen flex-col items-center justify-center bg-gradient-to-tr from-purple-600 via-indigo-500 via-55% to-blue-600 to-95% p-24 font-merriweather">
+    <section className="text-shadow relative flex h-screen min-h-screen flex-col items-center justify-center bg-gradient-to-tr from-purple-600 via-indigo-500 via-55% to-blue-600 to-95% p-6 md:p-24 font-merriweather">
       <p className="text-center text-6xl font-semibold leading-[6rem] text-white">
         <span ref={hi} className="inline-flex items-center ml-4 overflow-hidden opacity-0">
           Hi there!
