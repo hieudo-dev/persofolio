@@ -11,8 +11,8 @@ export default function Experience() {
       overline: "2020 - 2021",
       description: () => (
         <p>
-          Built and maintained SwagUp's sales platform, delivering new digitalized experiences and
-          improving legacy shipping processes.
+          Built and maintained SwagUp&apos;s sales platform, delivering new digitalized experiences
+          and improving legacy shipping processes.
           <span className="block mb-4" />
           Collaborated with stakeholders and a dedicated development team to implement initiatives
           aimed at driving sales growth and enhancing user satisfaction.
@@ -33,7 +33,7 @@ export default function Experience() {
           of an in-house frontend framework, impacting 5 cross-functional teams and over 365,000
           users.
           <span className="block mb-4" />
-          Closely collaborated with key stakeholders to maintain the company's internal design
+          Closely collaborated with key stakeholders to maintain the company&apos;s internal design
           system.
           <span className="block mb-4" />
           Succesfuly mentored junior members by providing constructive feedback and collaboration,
@@ -67,7 +67,7 @@ export default function Experience() {
         <p>
           Developed the frontend for a new website, unifying multiple local LEX sites as part of its
           rebranding campaign leading to more streamlined maintenance, strengthened brand identity,
-          and supported Lazada Logistics's internal structural changes.
+          and supported Lazada Logistics&apos;s internal structural changes.
           <span className="block mb-4" />
         </p>
       ),
@@ -152,7 +152,10 @@ export default function Experience() {
                 {tags && (
                   <div className="flex flex-wrap gap-2 mt-4">
                     {tags.map((tag) => (
-                      <div className="rounded-xl bg-opacity-80 bg-blue-600 px-3 py-1.5 text-lg text-blue-50">
+                      <div
+                        key={tag}
+                        className="rounded-xl bg-opacity-80 bg-blue-600 px-3 py-1.5 text-lg text-blue-50"
+                      >
                         {tag}
                       </div>
                     ))}

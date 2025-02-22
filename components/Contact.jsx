@@ -9,7 +9,7 @@ export default function Contact() {
       <div className="container mx-auto flex flex-col md:flex-row rounded-[56px]">
         <div className="relative flex flex-col w-full md:mx-8 md:w-1/2">
           <h2 className="relative z-10 mt-12 mb-8 font-black leading-none tracking-normal text-gray-500 font-merriweather text-8xl">
-            Let's <br />
+            Let&apos;s <br />
             <span className="text-blue-500">connect</span>
           </h2>
           <p className="mr-16 text-2xl font-semibold text-gray-400 font-nunito">
@@ -56,7 +56,7 @@ export default function Contact() {
               htmlFor="message"
               className="mb-2 text-lg font-semibold tracking-wider text-gray-500 font-nunito"
             >
-              What's on your mind?
+              What&apos;s on your mind?
             </label>
             <textarea
               id="email"

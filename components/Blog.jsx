@@ -7,7 +7,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function Blog() {
   return (
     <section className="relative after:absolute after:inset-0 after:-z-10 after:bg-white after:bg-opacity-5 after:backdrop-blur-md after:content-['']">
-      <Image fill className="absolute inset-0 object-cover object-top -z-20" src="/blog.jpg" />
+      <Image
+        fill
+        className="absolute inset-0 object-cover object-top -z-20"
+        src="/blog.jpg"
+        alt="blog"
+      />
       <div className="container flex flex-col items-center justify-center py-32 mx-auto">
         <p className="px-3 py-1 mb-6 tracking-widest text-purple-200 bg-white border border-purple-300 rounded-full shadow-md bg-opacity-10 font-nunito">
           BLOG

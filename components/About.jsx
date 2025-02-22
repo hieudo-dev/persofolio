@@ -50,7 +50,7 @@ export default function About() {
             </span>
           </h2>
           <p className="text-2xl font-normal leading-8 text-center text-gray-500 font-nunito">
-            I'm a software engineer from Vietnam 🇻🇳, driven by a{" "}
+            I&apos;m a software engineer from Vietnam 🇻🇳, driven by a{" "}
             <b className="text-gray-600"> strong passion</b> for learning and programming. My
             playground is web development, where I specialize in bridging the gap between frontend
             development and crafting <b>exceptional user experiences</b>.
