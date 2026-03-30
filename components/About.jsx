@@ -32,16 +32,16 @@ export default function About() {
   return (
     <section
       ref={about}
-      className="container flex justify-center h-screen py-20 mx-auto bg-blue-50"
+      className="container mx-auto flex h-screen justify-center bg-blue-50 py-20"
     >
-      <div className="flex items-center justify-center w-3/6 p-12">
+      <div className="flex w-3/6 items-center justify-center p-12">
         <div className="flex flex-col items-center">
-          <p className="px-3 py-1 mb-6 text-xs font-normal tracking-widest text-purple-500 bg-purple-100 border border-purple-400 rounded-full shadow-lg font-nunito">
+          <p className="mb-6 rounded-full border border-purple-400 bg-purple-100 px-3 py-1 font-nunito text-xs font-normal tracking-widest text-purple-500 shadow-lg">
             ABOUT
           </p>
-          <h2 className="mb-6 text-4xl font-bold text-gray-700 font-merriweather">
+          <h2 className="mb-6 font-merriweather text-4xl font-bold text-gray-700">
             My name is
-            <span className="relative inline-flex ml-4">
+            <span className="relative ml-4 inline-flex">
               Hieu
               <Underline
                 id="line"
@@ -49,15 +49,15 @@ export default function About() {
               />
             </span>
           </h2>
-          <p className="text-lg font-normal leading-8 text-left text-gray-500 font-nunito">
-            I'm from Vietnam 🇻🇳 and I'm a software engineer who loves learning and solving problems.
-            My main expertise is web development, where I specialize in delivering end-to-end
-            solutions, carefully crafting both exceptional user experiences and scalable backend
-            systems.
+          <p className="text-left font-nunito text-lg font-normal leading-8 text-gray-500">
+            I&apos;m from Vietnam 🇻🇳 and I&apos;m a software engineer who loves learning and solving
+            problems. My main expertise is web development, where I specialize in delivering
+            end-to-end solutions, carefully crafting both exceptional user experiences and scalable
+            backend systems.
           </p>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center w-3/6 p-28">
+      <div className="flex w-3/6 flex-col items-center justify-center p-28">
         <div className="relative">
           <div className="overflow-hidden">
             <Image
@@ -66,7 +66,7 @@ export default function About() {
               alt="Hieu"
               width={800}
               height={800}
-              className="relative z-10 object-cover rounded-lg aspect-square"
+              className="relative z-10 aspect-square rounded-lg object-cover"
             />
           </div>
           <div className="h-full w-full after:absolute after:left-12 after:top-12 after:block after:h-full after:w-full after:rounded-lg after:bg-indigo-300 after:content-['']"></div>

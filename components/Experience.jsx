@@ -11,8 +11,8 @@ export default function Experience() {
       overline: "2020-2021",
       description: () => (
         <p>
-          Built and maintained SwagUp's sales platform, delivering new digitalized experiences and
-          improving legacy shipping processes. Collaborated with stakeholders and a dedicated
+          Built and maintained SwagUp&apos;s sales platform, delivering new digitalized experiences
+          and improving legacy shipping processes. Collaborated with stakeholders and a dedicated
           development team to implement initiatives aimed at driving sales growth and enhancing user
           satisfaction. Spearheaded the adoption of unit testing protocols, which significantly
           increased testing coverage and reduced the number of regressions with each product
@@ -29,7 +29,7 @@ export default function Experience() {
         <p>
           Leveraged the state-of-the-art frontend technologies to build and maintain core components
           of an in-house frontend framework, impacting 5 cross-functional teams and over 365,000
-          users. Closely collaborated with key stakeholders to maintain the company's internal
+          users. Closely collaborated with key stakeholders to maintain the company&apos;s internal
           design system. Succesfuly mentored junior members by providing constructive feedback and
           collaboration, driving their professional growth within the team.
         </p>

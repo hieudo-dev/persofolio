@@ -13,7 +13,7 @@ export default function Contact() {
       <div className="container mx-auto flex rounded-[56px]">
         <div className="relative mx-8 flex w-1/2 flex-col">
           <h2 className="relative z-10 mb-8 mt-12 font-merriweather text-8xl font-black leading-none tracking-normal text-gray-500">
-            Let's <br />
+            Let&apos;s <br />
             <span className="text-blue-500">connect</span>
           </h2>
           <p className="mr-16 font-nunito text-2xl font-semibold text-gray-400">
@@ -56,7 +56,7 @@ export default function Contact() {
               htmlFor="message"
               className="mb-2 font-nunito text-lg font-semibold tracking-wider text-gray-500"
             >
-              What's on your mind?
+              What&apos;s on your mind?
             </label>
             <textarea
               id="email"
