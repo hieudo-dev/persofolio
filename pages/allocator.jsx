@@ -273,7 +273,8 @@ export default function Allocator() {
     const dipHighVal = parseFloatOrZero(dipHigh);
     const dipCurrentVal = parseFloatOrZero(dipCurrent);
     const hasDipEpisode = dipDeployments.length > 0 && dipDeployments.some((d) => d.tier >= 1);
-    const inDrawdown = hasDipEpisode && dipHighVal > 0 && dipCurrentVal > 0 && dipCurrentVal < dipHighVal;
+    const inDrawdown =
+      hasDipEpisode && dipHighVal > 0 && dipCurrentVal > 0 && dipCurrentVal < dipHighVal;
 
     const stocksPct = (c.stock / total) * 100;
     const over = Math.max(0, stocksPct - targets.stock);
@@ -1404,11 +1405,8 @@ export default function Allocator() {
                 intended.
               </p>
               <p>
-                <strong className="text-[#e8e6df]">
-                  Trim to watch limit (5%):
-                </strong>{" "}
-                If drift exceeds 5%, trim back to be within the watch limit. Proceeds always go to
-                cash.
+                <strong className="text-[#e8e6df]">Trim to watch limit (5%):</strong> If drift
+                exceeds 5%, trim back to be within the watch limit. Proceeds always go to cash.
               </p>
               <p>
                 <strong className="text-[#e8e6df]">Drawdown-aware:</strong> Stock trimming is
