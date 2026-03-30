@@ -173,7 +173,10 @@ export default function Allocator() {
   const updateChannel = (id, field, value) => {
     setChannels((prev) => ({
       ...prev,
-      [id]: { ...prev[id], [field]: parseFloatOrZero(value) },
+      [id]: {
+        ...prev[id],
+        [field]: field === "name" ? value : parseFloatOrZero(value),
+      },
     }));
   };
 
@@ -578,6 +581,7 @@ export default function Allocator() {
                         [b]: parseFloatOrZero(e.target.value),
                       }))
                     }
+                    onFocus={(e) => e.target.select()}
                     className="w-full rounded border border-[#2a2b27] bg-[#0e0f0c] px-2 py-1.5 text-right text-sm focus:border-[#d4b87a] focus:outline-none"
                     min="0"
                     max="100"
@@ -694,6 +698,7 @@ export default function Allocator() {
                       type="number"
                       value={ch[b] || ""}
                       onChange={(e) => updateChannel(id, b, e.target.value)}
+                      onFocus={(e) => e.target.select()}
                       placeholder="0"
                       className="w-16 rounded border border-[#2a2b27] bg-[#0e0f0c] px-1.5 py-1 text-right text-xs focus:border-[#d4b87a] focus:outline-none"
                       min="0"
@@ -847,6 +852,7 @@ export default function Allocator() {
                 type="number"
                 value={newIncome}
                 onChange={(e) => setNewIncome(e.target.value)}
+                onFocus={(e) => e.target.select()}
                 placeholder="e.g. 5"
                 className="w-full rounded border border-[#2a2b27] bg-[#0e0f0c] px-4 py-2 pr-12 text-lg focus:border-[#d4b87a] focus:outline-none"
                 min="0"
@@ -1045,6 +1051,7 @@ export default function Allocator() {
                   type="number"
                   value={dipHigh}
                   onChange={(e) => setDipHigh(e.target.value)}
+                  onFocus={(e) => e.target.select()}
                   placeholder="e.g. 1900"
                   className="w-full rounded border border-[#2a2b27] bg-[#0e0f0c] px-3 py-2 pr-10 text-sm focus:border-[#d4b87a] focus:outline-none"
                 />
@@ -1062,6 +1069,7 @@ export default function Allocator() {
                   type="number"
                   value={dipCurrent}
                   onChange={(e) => setDipCurrent(e.target.value)}
+                  onFocus={(e) => e.target.select()}
                   placeholder="e.g. 1615"
                   className="w-full rounded border border-[#2a2b27] bg-[#0e0f0c] px-3 py-2 pr-10 text-sm focus:border-[#d4b87a] focus:outline-none"
                 />
@@ -1079,6 +1087,7 @@ export default function Allocator() {
                   type="number"
                   value={dipCash}
                   onChange={(e) => setDipCash(e.target.value)}
+                  onFocus={(e) => e.target.select()}
                   placeholder="e.g. 30"
                   className="w-full rounded border border-[#2a2b27] bg-[#0e0f0c] px-3 py-2 pr-14 text-sm focus:border-[#d4b87a] focus:outline-none"
                 />
