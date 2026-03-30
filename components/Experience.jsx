@@ -98,16 +98,16 @@ export default function Experience() {
         <p className="px-3 py-1 mb-6 text-xs tracking-widest bg-white border border-purple-200 rounded-full shadow-md bg-opacity-10 font-nunito text-purple-50">
           EXPERIENCE
         </p>
-        <h2 className="mb-48 text-4xl font-bold font-merriweather text-purple-50">My journey</h2>
-        <div className="relative mx-auto grid grid-cols-[minmax(0,1fr)_220px_minmax(0,1fr)]">
+        <h2 className="mb-16 md:mb-48 text-4xl font-bold font-merriweather text-purple-50">My journey</h2>
+        <div className="relative mx-auto grid grid-cols-1 md:grid-cols-[minmax(0,1fr)_220px_minmax(0,1fr)]">
           <hr
             ref={lineRef}
-            className="absolute left-0 right-0 top-0 z-10 mx-auto h-[80vh] max-h-full w-1 border-none bg-gray-50"
+            className="hidden md:block absolute left-0 right-0 top-0 z-10 mx-auto h-[80vh] max-h-full w-1 border-none bg-gray-50"
           />
           {experience.map(({ jobtitle, description, company, overline, tags }, i) => (
             <div key={company} className="contents" ref={(el) => (companyRefs.current[i] = el)}>
               <div>
-                <p className="inline-block px-3 mt-32 mb-4 text-lg font-bold tracking-widest bg-purple-500 rounded-3xl bg-opacity-70 font-mavenpro text-purple-50">
+                <p className="inline-block px-3 mt-10 md:mt-32 mb-4 text-lg font-bold tracking-widest bg-purple-500 rounded-3xl bg-opacity-70 font-mavenpro text-purple-50">
                   {overline}
                 </p>
                 <h3 className="flex justify-center mb-2 text-3xl font-merriweather text-purple-50">
@@ -120,10 +120,10 @@ export default function Experience() {
                 <div className="relative h-full overflow-hidden">
                   <hr className="relative z-10 w-1 h-full bg-blue-300 border-none bg-opacity-40" />
                 </div>
-                <div className="absolute top-48 z-10 aspect-square min-h-8 min-w-8 rounded-full bg-gray-50 shadow-[0_0_24px_#f3e8ff]"></div>
+                <div className="hidden md:block absolute top-48 z-10 aspect-square min-h-8 min-w-8 rounded-full bg-gray-50 shadow-[0_0_24px_#f3e8ff]"></div>
               </div>
 
-              <div className="px-6 pt-6 pb-6 mt-20 mb-48 text-base text-left bg-white shadow-md rounded-3xl bg-opacity-15 font-mavenpro text-blue-50">
+              <div className="px-6 pt-6 pb-6 mt-4 md:mt-20 mb-48 text-base text-left bg-white shadow-md rounded-3xl bg-opacity-15 font-mavenpro text-blue-50">
                 {description()}
                 {tags && (
                   <div className="flex flex-wrap gap-2 mt-4">

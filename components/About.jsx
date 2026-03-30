@@ -32,9 +32,9 @@ export default function About() {
   return (
     <section
       ref={about}
-      className="container mx-auto flex h-screen justify-center bg-blue-50 py-20"
+      className="container mx-auto flex h-screen flex-col justify-center bg-blue-50 py-12 md:min-h-screen md:flex-row"
     >
-      <div className="flex w-3/6 items-center justify-center p-12">
+      <div className="flex items-center justify-center p-10 md:w-3/6 md:py-80 md:pr-12">
         <div className="flex flex-col items-center">
           <p className="mb-6 rounded-full border border-purple-400 bg-purple-100 px-3 py-1 font-nunito text-xs font-normal tracking-widest text-purple-500 shadow-lg">
             ABOUT
@@ -57,7 +57,7 @@ export default function About() {
           </p>
         </div>
       </div>
-      <div className="flex w-3/6 flex-col items-center justify-center p-28">
+      <div className="flex flex-col items-center justify-center p-10 pl-2 md:w-3/6 md:pl-16">
         <div className="relative">
           <div className="overflow-hidden">
             <Image

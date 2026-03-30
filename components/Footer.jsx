@@ -13,11 +13,11 @@ export default function Footer() {
       <div className="container mx-auto">
         <div className="mb-8 flex justify-center">
           <p className="inline bg-gradient-to-r from-blue-500 via-indigo-400 to-purple-500 bg-clip-text text-center font-mavenpro text-4xl font-semibold text-gray-800 text-transparent">
-            Thanks for reading!
+            Thanks for visiting!
           </p>
         </div>
         <hr className="mb-4 h-1 w-full bg-indigo-100" />
-        <div className="flex items-start justify-between">
+        <div className="flex flex-col items-center justify-between gap-2 md:flex-row md:gap-0">
           <p className="font-nunito text-xl font-semibold text-gray-500">
             © 2024 Handcrafted by Hieu
           </p>

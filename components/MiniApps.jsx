@@ -12,7 +12,7 @@ const miniApps = [
     href: "/allocator",
     icon: (
       <svg
-        className="w-8 h-8"
+        className="h-8 w-8"
         viewBox="0 0 24 24"
         fill="none"
         stroke="currentColor"
@@ -70,15 +70,15 @@ export default function MiniApps() {
   return (
     <section
       ref={sectionRef}
-      className="py-24 px-8 bg-gradient-to-b from-transparent to-blue-50/50"
+      className="bg-gradient-to-b from-transparent to-blue-50/50 px-8 py-10 md:py-24"
     >
-      <div className="max-w-4xl mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-semibold text-gray-800 mb-4">Mini-apps</h2>
-          <p className="text-gray-500 text-sm">Tools I built to solve real problems</p>
+      <div className="mx-auto max-w-4xl">
+        <div className="mb-12 text-center">
+          <h2 className="mb-4 text-4xl font-bold text-gray-800">Mini-apps</h2>
+          <p className="text-sm text-gray-500">Tools I built to solve real problems</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {miniApps.map((app, index) => (
             <Link
               key={app.href}
@@ -87,14 +87,14 @@ export default function MiniApps() {
               className={`group relative ${app.bgColor} ${app.borderColor} ${app.hoverBorderColor} border rounded-2xl p-6 transition-all duration-300 hover:shadow-lg hover:-translate-y-1`}
             >
               <div className={`${app.accentColor} mb-4`}>{app.icon}</div>
-              <h3 className="text-lg font-semibold text-gray-800 mb-2 group-hover:text-gray-900">
+              <h3 className="mb-2 text-lg font-semibold text-gray-800 group-hover:text-gray-900">
                 {app.name}
               </h3>
-              <p className="text-sm text-gray-500 leading-relaxed">{app.description}</p>
-              <div className="mt-4 flex items-center text-sm font-medium text-gray-400 group-hover:text-gray-600 transition-colors">
+              <p className="text-sm leading-relaxed text-gray-500">{app.description}</p>
+              <div className="mt-4 flex items-center text-sm font-medium text-gray-400 transition-colors group-hover:text-gray-600">
                 <span>Open tool</span>
                 <svg
-                  className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform"
+                  className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
